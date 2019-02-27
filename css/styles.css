@@ -61,6 +61,7 @@ our news css here
 
 #best > div, #our-news > div > div {
     height: max-content;
+    padding: 0 0 0 60px;
 }
 
 #best > div > div > div > div > a {
