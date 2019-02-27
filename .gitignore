@@ -9,3 +9,8 @@ node_modules
 out
 gen
 /css/test.css
+*.DS_STORE
+final banner top/fonts/
+final/fonts/
+final/img/
+"materia\305\202y/svg/"
