@@ -9,7 +9,7 @@ node_modules
 out
 gen
 /css/test.css
-*.DS_STORE
+*.DS_Store
 final banner top/fonts/
 final/fonts/
 final/img/
