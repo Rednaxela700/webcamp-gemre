@@ -44,170 +44,11 @@ a {
     margin: 3px;
 }
 
-/*
-
-our news css here
-
-*/
-
-.container-our-news {
-    width: 1070px;
-    margin: 0 auto;
-    position: relative;
-    clear: both;
-}
-
-#our-news div > h1, #best div > h1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    margin: 65px 0 30px 0;
-    font-size: 1.25em;
-    letter-spacing: 4.5px;
-}
-
-#best > div, #our-news > div > div {
-    height: max-content;
-    padding: 0 0 0 60px;
-}
-
-#best > div > div > div > div > a {
-    margin: 0;
-}
-
-.recommend a, .bestseller a {
-    text-decoration: none;
-    margin: 20px 0;
-    font-weight: 600;
-}
-
-.recommend .product-name, .bestseller .product-name {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: black;
-    font-size: 0.8em;
-    margin-top: 10px;
-}
-
-.recommend .product-price, .bestseller .product-price {
-    text-decoration: none;
-    color: #2078c6;
-    margin-right: 20px;
-    font-size: 1em;
-    margin-top: 10px;
-}
-
-.recommend .product-price del, .bestseller .product-price del {
-    color: #333;
-    font-size: 12px;
-    font-weight: lighter;
-}
-
-#premium {
-    display: block;
-    align-items: stretch;: center;
-    text-align: center;
-}
-
-#premium .premium-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: url("../img/strefa_premium.png") no-repeat;
-    background-size: cover;
-    opacity: 0.95;
-    min-height: 448px;
-}
-
-#premium h1 {
-    text-transform: uppercase;
-    color: #f8da94;
-    font-weight: bolder;
-    font-size: 3em;
-    /* padding-top: 120px; */
-}
-
-#premium p {
-    color: #989898;
-    margin: 10px;
-}
-
-#premium button {
-    color: black;
-    font-weight: 900;
-    background: #f8da94;
-    padding: 20px;
-    cursor: pointer;
-    display: inline-block;
-    border: none;
-    width: 240px;
-    margin: 30px;
-    text-transform: uppercase;
-}
-
-#info .container-our-news {
-    border-top: 1px solid #dbdbdb;
-    border-bottom: 1px solid #dbdbdb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-logo {
-    display: block;
-}
-
-.info-text {
-    display: block;
-    height: inherit;
-}
-
-#first-slider-container {
-    height: max-content;
-}
-
-#first-slider-container .slick-dots button {
-    visibility: hidden;
-}
-
-#first-slider-container .slick-dots li {
-    background-color: #C2D3DD;
-    font-size: 16px;
-    opacity: 0.7;
-    width: 100px;
-    height: .25rem;
-    flex: 0 30%;
-}
-
-#info .container-our-news div .info-logo img {
-    max-height: 80px;
-}
-
-.container-our-news > .info-text {
-    width: 100%;
-    /*margin: 35px 10px;*/
-    padding: 10px;
-}
-
-.container-our-news > .info-text > p {
-    margin: 10px;
-    font-size: 14px;
-    line-height: 1.4em;
-    color: #333;
-}
-
-/*our news css end
-
-
-
-
-
-*/
 img {
     max-width: 100%;
 }
 
+/*header section */
 #header > .top_info {
     width: 100%;
     background-color: #f4f4f4;
@@ -252,16 +93,6 @@ img {
     display: flex;
     justify-content: center;
 }
-
-/*#header > .logo_section .col-3 {*/
-/**/
-/*}*/
-
-/*#header > .logo_section .col-3:nth-child(4) {*/
-/*display: flex;*/
-/*justify-content: flex-end;*/
-/*align-items: center;*/
-/*}*/
 
 #header > .logo_section > .col-3:last-child {
     display: inline-flex;
@@ -434,6 +265,39 @@ div.col-3 > span {
     border: none;
 }
 
+/*Slider section */
+#first-slider-container {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#first-slider-container .slick-dots {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: 5%;
+    left: 36.5%;
+    justify-content: space-between;
+}
+
+#first-slider-container .slick-dots button {
+    visibility: hidden;
+}
+
+#first-slider-container .slick-dots li {
+    background-color: #C2D3DD;
+    font-size: 16px;
+    opacity: 0.7;
+    width: 100px;
+    height: .25rem;
+    flex: 0 30%;
+}
+
+#first-slider-container li.slick-active {
+    background-color: #FFFFFD;
+}
+
 /*hotspot section*/
 .hotspot {
     height: auto;
@@ -443,19 +307,50 @@ div.col-3 > span {
 }
 
 .hotspot-big {
-    /*height: 90%;*/
+    height: 440px;
     display: flex;
+    margin: 0 0 2rem 0;
 }
 
+.hotspot-big-content {
+    margin: 0 auto;
+    color: #fff;
+}
 .hotspot-big-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
     width: 40%;
+    margin: 0 20px 0 0;
     background: url("../img/hotspot-left.png") no-repeat;
     background-size: contain;
-    margin: 10px 20px 10px 0;
+    text-transform: uppercase;
+    text-align: center;
 }
 
+.hotspot-big-left h3 {
+    font-weight: 400;
+}
+
+.hotspot-big-header {
+    font-weight: 600;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.hotspot-big-left button {
+    margin: 15px 0 0 0;
+    padding: 15px 40px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
 .hotspot-big-right {
     width: 60%;
+    text-transform: uppercase;
+
 }
 
 .hotspot-big-right > div {
@@ -463,29 +358,33 @@ div.col-3 > span {
 }
 
 .hotspot-big-right-top, .hotspot-big-right-bot {
-    height: 40%;
+    height: 220px;
 }
 
+/*Positioning divs in big left hotspot*/
 .hotspot-product60:first-child {
-    background: url("../img/hotspot-right1.png") no-repeat center;
-    background-size: 100%;
+    background: url("../img/hotspot-right1.png") no-repeat;
+    background-size: cover;
+    margin: 0 10px 10px 0;
 }
 
 .hotspot-product40:last-child {
     background: url("../img/hotspot-right2.png") no-repeat center;
-    background-size: 100%;
+    background-size: cover;
+    margin: 0 0 10px 10px;
 }
 
 .hotspot-product60:last-child {
-    background: url("../img/hotspot-right4.png") no-repeat;
-    background-size: contain;
+    background: url("../img/hotspot-right4.png") no-repeat center;
+    margin: 10px 0 0 10px;
+    background-size: cover;
 }
 
 .hotspot-product40:first-child {
-    background: url("../img/hotspot-right3.png") no-repeat;
-    background-size: contain;
+    background: url("../img/hotspot-right3.png") no-repeat center;
+    margin: 10px 10px 0 0;
+    background-size: cover;
 }
-
 .hotspot-product60 {
     width: 60%;
 }
@@ -494,26 +393,54 @@ div.col-3 > span {
     width: 40%;
 }
 
+.hotspot-product1, .hotspot-product3 {
+    margin: 30px 0 0 20px;
+}
+
+.hotspot-product2, .hotspot-product4 {
+    margin: 30px 20px 0 0;
+    text-align: right;
+}
+
+/*hotpot bottom icons*/
 .hotspot-small {
-    /*height: 50px;*/
+    height: 50px;
     display: flex;
     margin: 0 auto;
+    width: 80%;
 }
 
 .hotspot-small > div {
     display: flex;
     flex: 1;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
 
-}
-
-.hotspot-small-box {
-    display: flex;
 }
 
 .hotspot-small-box > div {
     margin: 0 0 0 20px;
+}
+
+.hotspot-small-box span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hotspot-small-box > span i, .hotspot-small-box div span {
+    color: #80bad3;
+    text-transform: uppercase;
+}
+
+.hotspot-small-box div span {
+    font-size: 12px;
+}
+
+.hotspot-small-content h3 {
+    margin: auto 0 0 2px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 /*testing grid version*/
@@ -603,19 +530,127 @@ h3 {
     font-weight: 600;
 }
 
-#first-slider-container {
-    width: 1170px;
+/*
+
+our news css here
+
+*/
+
+.container-our-news {
+    width: 1070px;
     margin: 0 auto;
     position: relative;
+    clear: both;
 }
 
-#first-slider-container .slick-dots {
+#our-news div > h1, #best div > h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin: 65px 0 30px 0;
+    font-size: 1.25em;
+    letter-spacing: 4.5px;
+}
+
+#best > div, #our-news > div > div {
+    height: max-content;
+    padding: 0 0 0 60px;
+}
+
+#best > div > div > div > div > a {
+    margin: 0;
+}
+
+.recommend a, .bestseller a {
+    text-decoration: none;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.recommend .product-name, .bestseller .product-name {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.recommend .product-price, .bestseller .product-price {
+    text-decoration: none;
+    color: #2078c6;
+    margin-right: 20px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.recommend .product-price del, .bestseller .product-price del {
+    color: #333;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+#premium {
+    display: block;
+    align-items: stretch;: center;
+    text-align: center;
+}
+
+#premium .premium-container {
     display: flex;
-    list-style: none;
-    position: absolute;
-    bottom: 5%;
-    left: 36.5%;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../img/strefa_premium.png") no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+    min-height: 448px;
+}
+
+#premium h1 {
+    text-transform: uppercase;
+    color: #f8da94;
+    font-weight: bolder;
+    font-size: 3em;
+    /* padding-top: 120px; */
+}
+
+#premium p {
+    color: #989898;
+    margin: 10px;
+}
+
+#premium button {
+    color: black;
+    font-weight: 900;
+    background: #f8da94;
+    padding: 20px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    width: 240px;
+    margin: 30px;
+    text-transform: uppercase;
+}
+
+#info .container-our-news {
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-logo {
+    display: block;
+}
+
+.info-text {
+    display: block;
+    height: inherit;
+}
+
+#first-slider-container {
+    height: max-content;
 }
 
 #first-slider-container .slick-dots button {
@@ -631,9 +666,24 @@ h3 {
     flex: 0 30%;
 }
 
-#first-slider-container li.slick-active {
-    background-color: #FFFFFD;
+#info .container-our-news div .info-logo img {
+    max-height: 80px;
 }
+
+.container-our-news > .info-text {
+    width: 100%;
+    /*margin: 35px 10px;*/
+    padding: 10px;
+}
+
+.container-our-news > .info-text > p {
+    margin: 10px;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #333;
+}
+
+/*our news css end*/
 
 #footer_section {
     font-size: 0.8em;
