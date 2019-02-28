@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'icomoon';
-    src: url('/fonts/icomoon.eot?az1skw');
-    src: url('/fonts/icomoon.eot?az1skw#iefix') format('embedded-opentype'),
-    url('/fonts/icomoon.ttf?az1skw') format('truetype'),
-    url('/fonts/icomoon.woff?az1skw') format('woff'),
-    url('/fonts/icomoon.svg?az1skw#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +23,23 @@ a {
     width: 1170px;
 }
 
+.hide {
+    display: none;
+}
+
+.desktop_hidden {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+.desktop_hidden * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', serif;
+}
+
 .fas:before {
     margin: 3px;
 }
@@ -57,7 +63,7 @@ our news css here
     font-weight: 600;
     margin: 65px 0 30px 0;
     font-size: 1.25em;
-    letter-spacing: 4.5px
+    letter-spacing: 4.5px;
 }
 
 #best > div, #our-news > div > div {
@@ -192,34 +198,6 @@ our news css here
     color: #333;
 }
 
-@media only screen and (max-width: 757px) {
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        position: relative;
-        clear: both;
-    }
-
-    .recommend, .bestseller {
-        margin-bottom: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .recommend a, .bestseller a {
-        margin: 0 65px;
-    }
-
-    #premium .container div {
-        padding-top: 70px;
-    }
-
-    #info .container div .info-logo {
-        display: none;
-    }
-}
-
 /*our news css end
 
 
@@ -324,30 +302,46 @@ div.col-3 > span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     margin: auto;
+    height: 50px;
 }
 
-#header nav div {
-    /*height: 100%;*/
+#header nav > .nav-grid {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
 }
-
 #header nav > .nav-grid > ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
 }
 
 #header nav > .nav-grid > ul > li {
     list-style: none;
-    margin: 10px;
     display: inline-block;
+    height: 100%;
+
 }
 
+/*Main anchors in nav*/
 #header nav > .nav-grid > ul > li a {
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: auto 0;
+    padding: 0 5px;
+    text-align: center;
+
 }
 
+#header nav > .nav-grid > ul > li > a > i {
+    padding: 10px;
+
+}
 /*#header nav > .nav-grid > ul > li > ul a {*/
 /*color: #262626;*/
 /*font-size: 0.92em;*/
@@ -394,26 +388,27 @@ div.col-3 > span {
 /*}*/
 
 /*#header nav > .nav-grid > ul > li > ul {*/
+
+/*Styling hidden elements in navbar section*/
 .nav-hidden {
-    /*display: none;*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*right: 0;*/
+    display: none;
+    position: absolute;
+    top: 166px;
     background: #fff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    /*text-align: left;*/
-    padding: 0 30px 30px 30px;
+    padding: 5px 18px 20px;
     z-index: 99;
+    list-style: none;
 }
 
-.nav-hidden {
+#header nav > .nav-grid > ul > li:hover .nav-hidden {
     display: block !important;
 }
 
-#header nav > .nav-grid {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.nav-hidden > li {
+    line-height: 35px;
+    width: 100%;
+    height: 100%;
 }
 
 #header nav > .nav-grid > form {
@@ -423,6 +418,7 @@ div.col-3 > span {
     width: 100%;
 }
 
+/*Styling searchbar in nav*/
 #header nav > .nav-grid > form > input {
     width: 80%;
     height: 30px;
@@ -435,19 +431,6 @@ div.col-3 > span {
     padding: 0 20px;
     background: none;
     border: none;
-}
-
-.desktop_hidden {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-}
-
-.desktop_hidden * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', serif;
 }
 
 /*hotspot section*/
@@ -617,10 +600,6 @@ h3 {
     font-size: 0.80em;
     text-transform: uppercase;
     font-weight: 600;
-}
-
-.hide {
-    display: none;
 }
 
 #first-slider-container {
@@ -852,6 +831,7 @@ h3 {
     text-align: left;
 }
 
+/*Header Section RWD*/
 @media only screen and (max-width: 757px) {
     .mobile_hidden {
         display: none !important;
@@ -913,6 +893,7 @@ h3 {
     }
 }
 
+/*Promo section RWD*/
 @media (max-width: 757px) {
     .container {
         width: 100%;
@@ -953,6 +934,8 @@ h3 {
     }
 }
 
+/*Footer RWD
+*/
 @media (max-width: 757px) {
     #footer_section {
         font-size: 1.1em;
@@ -1024,5 +1007,34 @@ h3 {
 
     .inline-mobile {
         display: inline;
+    }
+
+    /*Slider RWD*/
+    @media only screen and (max-width: 757px) {
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            clear: both;
+        }
+
+        .recommend, .bestseller {
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .recommend a, .bestseller a {
+            margin: 0 65px;
+        }
+
+        #premium .container div {
+            padding-top: 70px;
+        }
+
+        #info .container div .info-logo {
+            display: none;
+        }
     }
 }
