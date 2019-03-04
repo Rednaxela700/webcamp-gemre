@@ -28,16 +28,16 @@ a {
 }
 
 .desktop_hidden {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .desktop_hidden * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', serif;
+    /*font-family: 'Lato', serif;*/
 }
 
 .fas:before {
@@ -50,7 +50,7 @@ img {
 
 /*header section */
 #header > .top_info {
-    width: 100%;
+    width: auto;
     background-color: #f4f4f4;
     display: flex;
     justify-content: space-between;
@@ -256,7 +256,7 @@ div.col-3 > span {
     height: 30px;
     background: none;
     border: none;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px solid black;
 }
 
 #header nav > .nav-grid > form > button {
@@ -301,7 +301,6 @@ div.col-3 > span {
 /*hotspot section*/
 .hotspot {
     height: auto;
-    /*width: 1170px;*/
     width: 1170px;
     margin: 0 auto;
 }
@@ -324,7 +323,7 @@ div.col-3 > span {
     flex: 1;
     width: 40%;
     margin: 0 20px 0 0;
-    background: url("../img/hotspot-left.png") no-repeat;
+    background: url("../img/hotspot-left.png") no-repeat center;
     background-size: contain;
     text-transform: uppercase;
     text-align: center;
@@ -343,9 +342,13 @@ div.col-3 > span {
 .hotspot-big-left button {
     margin: 15px 0 0 0;
     padding: 15px 40px;
-    font-size: 10px;
+    background: #faf8fe;
+    color: #000;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
 }
 .hotspot-big-right {
     width: 60%;
@@ -444,10 +447,10 @@ div.col-3 > span {
 }
 
 /*testing grid version*/
-.hotspot {
-    display: grid;
+/*.hotspot {*/
+/*display: grid;*/
 
-}
+/*}*/
 
 /*promo section */
 /*.promo-container {*/
@@ -885,15 +888,32 @@ our news css here
 /*Header Section RWD*/
 @media only screen and (max-width: 757px) {
     .mobile_hidden {
-        display: none !important;
+        display: none;
         visibility: hidden !important;
         opacity: 0 !important;
     }
 
     .mobile_visible {
-        display: block !important;
-        visibility: visible !important;
+        display: block;
+        visibility: visible;
         opacity: 1 !important;
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+    }
+
+    #header > .top_info {
+        display: none;
+    }
+
+    #header > .logo_section > a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 0 0 0 10px;
     }
 
     #header > .logo_section > .col-3:last-child a {
@@ -901,36 +921,33 @@ our news css here
         color: black;
     }
 
-    /*#header > .logo_section > .col-3:last-child a:first-child:before {*/
-    /*content: '\e902';*/
-    /*font-family: icomoon;*/
-    /*margin-right: 5px;*/
-    /*font-size: 50px;*/
-    /*}*/
-    /*#header > .logo_section > .col-3:last-child a:last-child:before {*/
-    /*content: '\e901';*/
-    /*font-family: icomoon;*/
-    /*margin-right: 5px;*/
-    /*font-size: 50px;*/
-    /*}*/
     #header > .logo_section .col-3 {
-        width: 35%;
     }
 
     #header > nav {
+        width: 100vw;
+        height: auto;
+    }
+
+    #header > nav > .nav-grid {
         width: 100%;
     }
 
-    #header > nav > .col-6 {
-        width: 100%;
+    #header > nav > .nav-grid > ul {
+        display: block;
     }
 
-    #header > nav > .col-6 > ul {
-        display: flex;
-        flex-direction: column;
+    #header > nav > .nav-grid > ul li {
+        display: block;
+        width: 100vw;
+        height: 10vh;
     }
 
-    #header nav > .col-6 > ul > li:after {
+    #header > nav > .nav-grid > ul > li > a {
+        text-align: center;
+    }
+
+    #header nav > .nav-grid > ul > li:after {
         display: none;
     }
 
@@ -944,6 +961,34 @@ our news css here
     }
 }
 
+/*hotspot section RWD*/
+@media (max-width: 757px) {
+    section.hotspot {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .hotspot-big {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .hotspot-big-left {
+        background: url("../img/hotspot-left.png") no-repeat center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hotspot-big-right {
+        margin: 20px auto;
+        width: 100%;
+    }
+}
 /*Promo section RWD*/
 @media (max-width: 757px) {
     .container {
@@ -965,7 +1010,7 @@ our news css here
         margin: auto;
     }
 
-    .promo-moblie-bg {
+    .promo-mobile-bg {
         width: 100%;
         height: 30vw;
         background: url("../img/strefa_promocyjna.png") no-repeat;
@@ -981,6 +1026,13 @@ our news css here
     }
 
     #promo-cta button {
+        width: 100%;
+    }
+}
+
+/*News sections RWD*/
+@media (max-width: 757px) {
+    .container-our-news {
         width: 100%;
     }
 }
