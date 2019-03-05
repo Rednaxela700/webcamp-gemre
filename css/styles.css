@@ -11,7 +11,7 @@ body {
 }
 
 section {
-    padding-top: 2rem;
+    margin-top: 2rem;
 }
 
 a {
@@ -315,6 +315,7 @@ div.col-3 > span {
     margin: 0 auto;
     color: #fff;
 }
+
 .hotspot-big-left {
     display: flex;
     flex-direction: column;
@@ -350,6 +351,7 @@ div.col-3 > span {
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .hotspot-big-right {
     width: 60%;
     text-transform: uppercase;
@@ -388,6 +390,7 @@ div.col-3 > span {
     margin: 10px 10px 0 0;
     background-size: cover;
 }
+
 .hotspot-product60 {
     width: 60%;
 }
@@ -550,7 +553,7 @@ our news css here
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    margin: 65px 0 30px 0;
+    margin: 0 0 30px 0;
     font-size: 1.25em;
     letter-spacing: 4.5px;
 }
@@ -781,7 +784,7 @@ our news css here
 }
 
 #footer_links > div:last-child {
-    padding-right: 2rem;
+    /*padding-right: 2rem;*/
     /*padding-left: 40px;*/
     /*padding-bottom: 58px;*/
 }
@@ -861,7 +864,7 @@ our news css here
     width: 70%;
     height: 35px;
     font-size: 0.8em;
-    margin: 4px 0;
+    margin: 4px 0 0 0;
     border: none;
 }
 
@@ -916,21 +919,31 @@ our news css here
         margin: 0 0 0 10px;
     }
 
-    #header > .logo_section > .col-3:last-child a {
+    #header > .logo_section > .col-3:last-child {
         text-decoration: none;
+        display: none;
         color: black;
     }
 
-    #header > .logo_section .col-3 {
-    }
-
+    /*navbar here*/
+    /*hiding before click on hamburger*/
     #header > nav {
+        display: none;
         width: 100vw;
         height: auto;
     }
 
+    #header > .logo_section {
+        width: auto;
+    }
+
     #header > nav > .nav-grid {
         width: 100%;
+    }
+
+    #header > nav > div[role="custom-dropdown"] {
+        display: none;
+        height: 100%;
     }
 
     #header > nav > .nav-grid > ul {
@@ -959,6 +972,11 @@ our news css here
     #first-slider-container {
         width: 100%;
     }
+
+    #first-slider-container > ul {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 /*hotspot section RWD*/
@@ -967,18 +985,20 @@ our news css here
         display: block;
         width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: 1rem auto;
     }
 
     .hotspot-big {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 95%;
         margin: 0 auto;
         height: 100%;
+        min-block-size: fit-content;
     }
 
     .hotspot-big-left {
+        min-height: 400px;
         background: url("../img/hotspot-left.png") no-repeat center;
         width: 100%;
         margin: 0 auto;
@@ -988,7 +1008,12 @@ our news css here
         margin: 20px auto;
         width: 100%;
     }
+
+    .hotspot-small {
+        width: 95%;
+    }
 }
+
 /*Promo section RWD*/
 @media (max-width: 757px) {
     .container {
@@ -998,16 +1023,32 @@ our news css here
 
     #promo {
         width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
+        height: auto;
+        margin-top: 2rem;
         background: none;
         /*padding: 10% 5%;*/
     }
 
     #promo > .promo-left {
+        position: static;
         width: 100%;
         margin: auto;
+        text-align: center;
+    }
+
+    #promo > .promo-left > span, #promo-price {
+        margin: 1rem;
+    }
+
+    #promo > .promo-left > span {
+        display: inline-block;
+        text-align: left;
+        width: 40vw;
+        vertical-align: middle;
+    }
+
+    #promo > .promo-left > div > img {
+        display: block;
     }
 
     .promo-mobile-bg {
@@ -1018,11 +1059,14 @@ our news css here
     }
 
     #promo-price {
-        margin: 2rem auto;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .promo-right {
         position: static;
+        top: auto;
+        left: auto;
     }
 
     #promo-cta button {
@@ -1034,6 +1078,22 @@ our news css here
 @media (max-width: 757px) {
     .container-our-news {
         width: 100%;
+    }
+
+    #our-news > .container-our-news, #best > .container-our-news {
+        width: 80%;
+    }
+
+    #best > div {
+        padding: 0;
+    }
+
+    #best > div > div {
+        padding: 0 0 0 20%;
+    }
+
+    #info > div {
+        flex-direction: column;
     }
 }
 
@@ -1073,6 +1133,10 @@ our news css here
 
     #footer_section > footer > div > a:first-child {
         display: none;
+    }
+
+    #newsletter > form > div > button {
+        margin: 4px auto;
     }
 
     #footer_links {
