@@ -56,37 +56,65 @@
 .nav
   display: flex
   margin: 0 1rem
-  padding: 1rem
   background: #feebb8
   justify-content: flex-end
+  align-items: center
   &-container
-    align-self: center
+    width: calc(100% - (2rem + 190px))
   &-list
     &-container
       display: flex
-      justify-content: space-between
+      justify-content: center
       list-style: none
+      padding: 0 1rem
     &-item
       display: flex
       font-size: 0.8rem
       text-transform: uppercase
-      height: 40px
+      position: relative
+      height: 70px
       align-items: center
       cursor: pointer
+      &:hover .nav-list-inner-container
+        display: block !important
       & .fas
         padding: 0 1rem
-    &-inner-container
-      display: none
+    &-inner
+      &-container
+        display: none
+        position: absolute
+        top: 70px
+        left: -1rem
+        width: calc(100% + 1rem - 9px)
+        list-style: none
+        & > li
+          border-bottom: 1px solid #feebb8
+          &:hover
+            border-bottom: 1px solid black
+      &-link
+        display: block
+        padding: .5rem
+        color: #000
+        background: #feebb5
+        text-decoration: none
+        text-transform: capitalize
+        //here was width
+        width: 100%
+        text-align: center
+
+
   &-searchbar
     display: flex
     height: 40px
     width: 190px
     border: none
+    align-items: center
     &-input
       background: none
       border: none
       width: 150px
       border-bottom: 1px solid #000
+      height: 30px
       &:focus
         outline: none
         font-size: 1rem
