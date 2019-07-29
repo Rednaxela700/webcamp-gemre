@@ -223,4 +223,42 @@ body {
   margin: 0 30px 0 0;
 }
 
+.hotspot {
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: 40% 20% 15% auto;
+  grid-template-rows: auto;
+  grid-template-areas: "main top-lg top-lg top-sm" "main bot-sm bot-lg bot-lg";
+}
+.hotspot-main {
+  grid-area: main;
+  background: url("../img/hotspot-left.png") no-repeat center;
+  height: 610px;
+}
+.hotspot-top-lg, .hotspot-top-sm {
+  background-size: cover;
+}
+.hotspot-top-lg {
+  grid-area: top-lg;
+  background: url("../img/hotspot-right1.png") no-repeat #ffb8b8;
+}
+.hotspot-top-sm {
+  grid-area: top-sm;
+  background: url("../img/hotspot-right2.png") no-repeat;
+}
+.hotspot-bot-lg, .hotspot-bot-sm {
+  background-size: contain;
+}
+.hotspot-bot-lg {
+  justify-self: right;
+  grid-area: bot-lg;
+  background: url("../img/hotspot-right3.png") no-repeat #7bbfdd right;
+  width: 100%;
+}
+.hotspot-bot-sm {
+  grid-area: bot-sm;
+  background: url("../img/hotspot-right4.png") no-repeat;
+}
+
 /*# sourceMappingURL=main.css.map */

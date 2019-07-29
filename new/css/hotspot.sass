@@ -1,0 +1,32 @@
+.hotspot
+  padding: 1rem
+  display: grid
+  grid-gap: 1.5rem
+  grid-template-columns: 40% 20% 15% auto
+  grid-template-rows: auto
+  grid-template-areas: "main top-lg top-lg top-sm" "main bot-sm bot-lg bot-lg"
+  &-main
+    grid-area: main
+    background: url("../img/hotspot-left.png") no-repeat center
+    height: 610px
+  &-top
+    &-lg, &-sm
+      background-size: cover
+    &-lg
+      grid-area: top-lg
+      background: url("../img/hotspot-right1.png") no-repeat #ffb8b8
+    &-sm
+      grid-area: top-sm
+      background: url("../img/hotspot-right2.png") no-repeat
+  &-bot
+    &-lg, &-sm
+      background-size: contain
+    &-lg
+      justify-self: right
+      grid-area: bot-lg
+      background: url("../img/hotspot-right3.png") no-repeat #7bbfdd right
+      //background-position: right
+      width: 100%
+    &-sm
+      grid-area: bot-sm
+      background: url("../img/hotspot-right4.png") no-repeat
