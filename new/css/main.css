@@ -56,6 +56,10 @@ body {
   width: 180px;
   text-transform: uppercase;
 }
+.logo-button-item-link {
+  text-decoration: none;
+  color: #000;
+}
 .logo-button-item .fas, .logo-button-item .far {
   font-size: 1rem;
   padding: 0.3em;
