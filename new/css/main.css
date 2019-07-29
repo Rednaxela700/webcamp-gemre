@@ -403,4 +403,10 @@ body {
   font-size: 0.8rem;
 }
 
+.product-header {
+  margin: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
