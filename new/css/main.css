@@ -20,8 +20,10 @@ body {
 }
 .header-top-text {
   padding: 0 1rem;
+  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
+  font-size: 0.6rem;
 }
 .header-top-text:nth-child(odd) {
   border-right: 1px solid darkgrey;
