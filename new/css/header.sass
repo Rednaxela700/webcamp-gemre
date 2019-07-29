@@ -8,8 +8,10 @@
     background: #f3f4f5
     &-text
       padding: 0 1rem
+      vertical-align: middle
       text-align: center
       text-transform: uppercase
+      font-size: .6rem
       &:nth-child(odd)
         border-right: 1px solid darkgrey
     &-link
@@ -87,6 +89,7 @@
         left: -1rem
         width: calc(100% + 1rem - 9px)
         list-style: none
+        z-index: 2
         & > li
           border-bottom: 1px solid #feebb8
           &:hover

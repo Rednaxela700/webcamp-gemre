@@ -1,0 +1,44 @@
+.slider
+  position: relative
+  padding: 1rem
+.slide
+  background-size: cover
+  background: no-repeat center
+  &1
+    background-image: url('../img/banner1.png')
+  &2
+    background-image: url('../img/banner2.png')
+  &3
+    background-image: url("../img/banner3.png")
+  &-content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    min-height: 600px
+    & span
+      font-size: 5rem
+.arrow
+  cursor: pointer
+  position: absolute
+  top: 50%
+  margin: -30px 0 0 0
+  width: 0
+  height: 0
+  border-style: solid
+  opacity: .7
+  &:hover
+    opacity: .9
+
+#arrow
+  &-left
+    border-width: 30px 40px 30px 0
+    left: 0
+    border-color: transparent #000 transparent transparent
+    margin: 0 0 0 30px
+  &-right
+    border-width: 30px 0 30px 40px
+    right: 0
+    border-color: transparent transparent transparent #000
+    margin: 0 30px 0 0

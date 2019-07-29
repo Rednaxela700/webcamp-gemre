@@ -20,8 +20,10 @@ body {
 }
 .header-top-text {
   padding: 0 1rem;
+  vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
+  font-size: 0.6rem;
 }
 .header-top-text:nth-child(odd) {
   border-right: 1px solid darkgrey;
@@ -114,6 +116,7 @@ body {
   left: -1rem;
   width: calc(100% + 1rem - 9px);
   list-style: none;
+  z-index: 2;
 }
 .nav-list-inner-container > li {
   border-bottom: 1px solid #feebb8;
@@ -161,6 +164,63 @@ body {
 }
 .nav-searchbar-button:hover {
   cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  padding: 1rem;
+}
+
+.slide {
+  background-size: cover;
+  background: no-repeat center;
+}
+.slide1 {
+  background-image: url("../img/banner1.png");
+}
+.slide2 {
+  background-image: url("../img/banner2.png");
+}
+.slide3 {
+  background-image: url("../img/banner3.png");
+}
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 600px;
+}
+.slide-content span {
+  font-size: 5rem;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin: -30px 0 0 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  opacity: 0.7;
+}
+.arrow:hover {
+  opacity: 0.9;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  left: 0;
+  border-color: transparent #000 transparent transparent;
+  margin: 0 0 0 30px;
+}
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  right: 0;
+  border-color: transparent transparent transparent #000;
+  margin: 0 30px 0 0;
 }
 
 /*# sourceMappingURL=main.css.map */
