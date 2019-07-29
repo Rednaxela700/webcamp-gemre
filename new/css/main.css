@@ -408,5 +408,34 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+.product-container {
+  display: flex;
+  justify-content: center;
+}
+.product-item {
+  padding: 0 1rem;
+}
+.product-item-img {
+  border: 1px solid gray;
+  height: 270px;
+}
+.product-caption-title {
+  display: block;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.product-caption-discount {
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  color: gray;
+}
+.product-caption-price {
+  color: #7abfdd;
+  font-weight: bold;
+  padding: 0 0.5rem;
+  font-size: 1.1rem;
+}
 
 /*# sourceMappingURL=main.css.map */
