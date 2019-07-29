@@ -28,16 +28,16 @@ a {
 }
 
 .desktop_hidden {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .desktop_hidden * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', serif;
+    /*font-family: 'Lato', serif;*/
 }
 
 .fas:before {
@@ -885,15 +885,29 @@ our news css here
 /*Header Section RWD*/
 @media only screen and (max-width: 757px) {
     .mobile_hidden {
-        display: none !important;
+        display: none;
         visibility: hidden !important;
         opacity: 0 !important;
     }
 
     .mobile_visible {
-        display: block !important;
-        visibility: visible !important;
+        display: block;
+        visibility: visible;
         opacity: 1 !important;
+    }
+    section {
+        width: 100%;
+        height: auto;
+    }
+    #header > .top_info {
+        display: none;
+    }
+    #header > .logo_section > a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 0 0 0 10px;
     }
 
     #header > .logo_section > .col-3:last-child a {
@@ -901,20 +915,7 @@ our news css here
         color: black;
     }
 
-    /*#header > .logo_section > .col-3:last-child a:first-child:before {*/
-    /*content: '\e902';*/
-    /*font-family: icomoon;*/
-    /*margin-right: 5px;*/
-    /*font-size: 50px;*/
-    /*}*/
-    /*#header > .logo_section > .col-3:last-child a:last-child:before {*/
-    /*content: '\e901';*/
-    /*font-family: icomoon;*/
-    /*margin-right: 5px;*/
-    /*font-size: 50px;*/
-    /*}*/
     #header > .logo_section .col-3 {
-        width: 35%;
     }
 
     #header > nav {
