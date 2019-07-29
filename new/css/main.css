@@ -1,4 +1,3 @@
-@import url(header.sass);
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +8,27 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   background: #fff;
+}
+
+.header-top {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f5;
+}
+.header-top-text {
+  padding: 0 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header-top-text:nth-child(odd) {
+  border-right: 1px solid darkgrey;
+}
+.header-top-link {
+  text-decoration: none;
+  color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */
