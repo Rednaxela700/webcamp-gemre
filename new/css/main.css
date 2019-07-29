@@ -227,7 +227,7 @@ body {
   padding: 1rem;
   display: grid;
   grid-gap: 1.5rem;
-  grid-template-columns: 40% 20% 15% auto;
+  grid-template-columns: 40% 25% 10% auto;
   grid-template-rows: auto;
   grid-template-areas: "main top-lg top-lg top-sm" "main bot-sm bot-lg bot-lg";
 }
@@ -253,12 +253,12 @@ body {
 .hotspot-bot-lg {
   justify-self: right;
   grid-area: bot-lg;
-  background: url("../img/hotspot-right3.png") no-repeat #7bbfdd right;
+  background: url("../img/hotspot-right4.png") no-repeat #ffe4a4 left;
   width: 100%;
 }
 .hotspot-bot-sm {
   grid-area: bot-sm;
-  background: url("../img/hotspot-right4.png") no-repeat;
+  background: url("../img/hotspot-right3.png") no-repeat;
 }
 .hotspot-main-container {
   display: flex;
@@ -283,6 +283,33 @@ body {
   height: 60px;
   width: 230px;
   text-transform: uppercase;
+}
+.hotspot-mid-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.hotspot-mid-container > span {
+  text-transform: uppercase;
+}
+.hotspot-mid-header {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hotspot-right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 2rem;
+}
+.hotspot-right-container > span {
+  text-transform: uppercase;
+}
+.hotspot-right-header {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
