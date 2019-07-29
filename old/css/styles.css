@@ -11,7 +11,7 @@ body {
 }
 
 section {
-    padding-top: 2rem;
+    margin-top: 2rem;
 }
 
 a {
@@ -50,7 +50,7 @@ img {
 
 /*header section */
 #header > .top_info {
-    width: 100%;
+    width: auto;
     background-color: #f4f4f4;
     display: flex;
     justify-content: space-between;
@@ -256,7 +256,7 @@ div.col-3 > span {
     height: 30px;
     background: none;
     border: none;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px solid black;
 }
 
 #header nav > .nav-grid > form > button {
@@ -301,7 +301,6 @@ div.col-3 > span {
 /*hotspot section*/
 .hotspot {
     height: auto;
-    /*width: 1170px;*/
     width: 1170px;
     margin: 0 auto;
 }
@@ -316,6 +315,7 @@ div.col-3 > span {
     margin: 0 auto;
     color: #fff;
 }
+
 .hotspot-big-left {
     display: flex;
     flex-direction: column;
@@ -324,7 +324,7 @@ div.col-3 > span {
     flex: 1;
     width: 40%;
     margin: 0 20px 0 0;
-    background: url("../img/hotspot-left.png") no-repeat;
+    background: url("../img/hotspot-left.png") no-repeat center;
     background-size: contain;
     text-transform: uppercase;
     text-align: center;
@@ -343,10 +343,15 @@ div.col-3 > span {
 .hotspot-big-left button {
     margin: 15px 0 0 0;
     padding: 15px 40px;
-    font-size: 10px;
+    background: #faf8fe;
+    color: #000;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
 }
+
 .hotspot-big-right {
     width: 60%;
     text-transform: uppercase;
@@ -385,6 +390,7 @@ div.col-3 > span {
     margin: 10px 10px 0 0;
     background-size: cover;
 }
+
 .hotspot-product60 {
     width: 60%;
 }
@@ -444,10 +450,10 @@ div.col-3 > span {
 }
 
 /*testing grid version*/
-.hotspot {
-    display: grid;
+/*.hotspot {*/
+/*display: grid;*/
 
-}
+/*}*/
 
 /*promo section */
 /*.promo-container {*/
@@ -547,7 +553,7 @@ our news css here
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    margin: 65px 0 30px 0;
+    margin: 0 0 30px 0;
     font-size: 1.25em;
     letter-spacing: 4.5px;
 }
@@ -778,7 +784,7 @@ our news css here
 }
 
 #footer_links > div:last-child {
-    padding-right: 2rem;
+    /*padding-right: 2rem;*/
     /*padding-left: 40px;*/
     /*padding-bottom: 58px;*/
 }
@@ -858,7 +864,7 @@ our news css here
     width: 70%;
     height: 35px;
     font-size: 0.8em;
-    margin: 4px 0;
+    margin: 4px 0 0 0;
     border: none;
 }
 
@@ -910,28 +916,69 @@ our news css here
         margin: 0 0 0 10px;
     }
 
-    #header > .logo_section > .col-3:last-child a {
+    section {
+        width: 100%;
+        height: auto;
+    }
+
+    #header > .top_info {
+        display: none;
+    }
+
+    #header > .logo_section > a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 0 0 0 10px;
+    }
+
+    #header > .logo_section > .col-3:last-child {
         text-decoration: none;
+        display: none;
         color: black;
     }
 
+<<<<<<< HEAD:old/css/styles.css
     #header > .logo_section .col-3 {
-    }
-
+=======
+    /*navbar here*/
+    /*hiding before click on hamburger*/
     #header > nav {
+        display: none;
+        width: 100vw;
+        height: auto;
+>>>>>>> 49451833d21f290676874d51116da7cfd27b15fa:css/styles.css
+    }
+
+    #header > .logo_section {
+        width: auto;
+    }
+
+    #header > nav > .nav-grid {
         width: 100%;
     }
 
-    #header > nav > .col-6 {
-        width: 100%;
+    #header > nav > div[role="custom-dropdown"] {
+        display: none;
+        height: 100%;
     }
 
-    #header > nav > .col-6 > ul {
-        display: flex;
-        flex-direction: column;
+    #header > nav > .nav-grid > ul {
+        display: block;
     }
 
-    #header nav > .col-6 > ul > li:after {
+    #header > nav > .nav-grid > ul li {
+        display: block;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    #header > nav > .nav-grid > ul > li > a {
+        text-align: center;
+    }
+
+    #header nav > .nav-grid > ul > li:after {
         display: none;
     }
 
@@ -942,6 +989,46 @@ our news css here
 
     #first-slider-container {
         width: 100%;
+    }
+
+    #first-slider-container > ul {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+/*hotspot section RWD*/
+@media (max-width: 757px) {
+    section.hotspot {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    .hotspot-big {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+        height: 100%;
+        min-block-size: fit-content;
+    }
+
+    .hotspot-big-left {
+        min-height: 400px;
+        background: url("../img/hotspot-left.png") no-repeat center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hotspot-big-right {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .hotspot-small {
+        width: 95%;
     }
 }
 
@@ -954,19 +1041,35 @@ our news css here
 
     #promo {
         width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
+        height: auto;
+        margin-top: 2rem;
         background: none;
         /*padding: 10% 5%;*/
     }
 
     #promo > .promo-left {
+        position: static;
         width: 100%;
         margin: auto;
+        text-align: center;
     }
 
-    .promo-moblie-bg {
+    #promo > .promo-left > span, #promo-price {
+        margin: 1rem;
+    }
+
+    #promo > .promo-left > span {
+        display: inline-block;
+        text-align: left;
+        width: 40vw;
+        vertical-align: middle;
+    }
+
+    #promo > .promo-left > div > img {
+        display: block;
+    }
+
+    .promo-mobile-bg {
         width: 100%;
         height: 30vw;
         background: url("../img/strefa_promocyjna.png") no-repeat;
@@ -974,15 +1077,41 @@ our news css here
     }
 
     #promo-price {
-        margin: 2rem auto;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .promo-right {
         position: static;
+        top: auto;
+        left: auto;
     }
 
     #promo-cta button {
         width: 100%;
+    }
+}
+
+/*News sections RWD*/
+@media (max-width: 757px) {
+    .container-our-news {
+        width: 100%;
+    }
+
+    #our-news > .container-our-news, #best > .container-our-news {
+        width: 80%;
+    }
+
+    #best > div {
+        padding: 0;
+    }
+
+    #best > div > div {
+        padding: 0 0 0 20%;
+    }
+
+    #info > div {
+        flex-direction: column;
     }
 }
 
@@ -1022,6 +1151,10 @@ our news css here
 
     #footer_section > footer > div > a:first-child {
         display: none;
+    }
+
+    #newsletter > form > div > button {
+        margin: 4px auto;
     }
 
     #footer_links {
