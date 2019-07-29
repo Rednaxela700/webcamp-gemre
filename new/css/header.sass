@@ -53,4 +53,50 @@
         border: 2px solid #d5d1ac
       &:focus
         outline: none
-
+.nav
+  display: flex
+  margin: 0 1rem
+  padding: 1rem
+  background: #feebb8
+  justify-content: flex-end
+  &-container
+    align-self: center
+  &-list
+    &-container
+      display: flex
+      justify-content: space-between
+      list-style: none
+    &-item
+      display: flex
+      font-size: 0.8rem
+      text-transform: uppercase
+      height: 40px
+      align-items: center
+      cursor: pointer
+      & .fas
+        padding: 0 1rem
+    &-inner-container
+      display: none
+  &-searchbar
+    display: flex
+    height: 40px
+    width: 190px
+    border: none
+    &-input
+      background: none
+      border: none
+      width: 150px
+      border-bottom: 1px solid #000
+      &:focus
+        outline: none
+        font-size: 1rem
+    &-button
+      border: none
+      height: 40px
+      width: 40px
+      padding: .2em
+      background: none
+      & .fa
+        font-size: 1rem
+      &:hover
+        cursor: pointer
