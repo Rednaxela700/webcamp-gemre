@@ -1,7 +1,14 @@
+@import url(header.sass);
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  background: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
