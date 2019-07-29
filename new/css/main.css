@@ -320,4 +320,27 @@ body {
   color: #ffffff;
 }
 
+.small-box-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.small-box-item {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.small-box-icon {
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: #7abfdd;
+}
+.small-box-text-header {
+  font-weight: 500;
+}
+.small-box-text-span {
+  text-transform: uppercase;
+  color: #7abfdd;
+}
+
 /*# sourceMappingURL=main.css.map */
