@@ -14,22 +14,29 @@
       background-size: cover
     &-lg
       grid-area: top-lg
-      background: url("../img/hotspot-right1.png") no-repeat #ffb8b8
+      background-image: url("../img/hotspot-right1.png")
+      background-color: #ffb8b8
+      background-repeat: no-repeat
     &-sm
       grid-area: top-sm
-      background: url("../img/hotspot-right2.png") no-repeat
+      background-image: url("../img/hotspot-right2.png")
+      background-repeat: no-repeat
   &-bot
     &-lg, &-sm
       background-size: contain
     &-lg
       justify-self: right
       grid-area: bot-lg
-      background: url("../img/hotspot-right4.png") no-repeat #ffe4a4 left
-      //background-position: right
+      background-image: url("../img/hotspot-right4.png")
+      background-color: #ffe4a4
+      background-position: left
+      background-repeat: no-repeat
       width: 100%
     &-sm
       grid-area: bot-sm
-      background: url("../img/hotspot-right3.png") no-repeat
+      background-image: url("../img/hotspot-right3.png")
+      background-repeat: no-repeat
+      background-color: #7bbfdd
   &-main
     &-container
       display: flex
