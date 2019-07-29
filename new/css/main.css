@@ -30,5 +30,10 @@ body {
   text-decoration: none;
   color: #000;
 }
+.header-logo {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */
