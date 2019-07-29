@@ -260,5 +260,29 @@ body {
   grid-area: bot-sm;
   background: url("../img/hotspot-right4.png") no-repeat;
 }
+.hotspot-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.hotspot-main-container > span {
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.hotspot-header {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+.hotspot-main-button {
+  height: 60px;
+  width: 230px;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=main.css.map */
