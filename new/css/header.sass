@@ -1,13 +1,11 @@
 .header
   &-top
     display: flex
-    width: 100%
+    width: 100vw
     height: 30px
     justify-content: space-between
     align-items: center
     background: #f3f4f5
-    &-left
-
     &-text
       padding: 0 1rem
       text-align: center
@@ -17,7 +15,42 @@
     &-link
       text-decoration: none
       color: #000
-  &-logo
+.logo
+  display: flex
+  justify-content: flex-end
+  width: 100%
+  padding: 1rem
+  &-container
     display: flex
-    justify-content: flex-end
-    width: 100%
+    //width 50% - 1/2 logo-img-width
+    width: calc(50% + 194px/2)
+    justify-content: space-between
+    align-items: center
+    &-img
+      display: block
+  &-button
+    &-container
+      display: flex
+
+    &-item
+      font-family: "Lato", sans-serif
+      display: flex
+      height: 40px
+      width: 180px
+      justify-content: center
+      text-transform: uppercase
+      align-items: center
+      &-icon
+        font-size: 1.2rem
+        padding: .2em
+      //styles for first icon
+      &:first-child
+        background: #fff
+        border: none
+      //styles for second icon
+      &:last-child
+        background: #fff
+        border: 2px solid #d5d1ac
+      &:focus
+        outline: none
+
