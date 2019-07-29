@@ -343,4 +343,64 @@ body {
   color: #7abfdd;
 }
 
+.promo {
+  height: 420px;
+  position: relative;
+  background-image: url("../img/strefa_promocyjna.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -7rem;
+  margin: 1rem 0;
+}
+.promo-container {
+  width: 50vw;
+  padding: 2rem 10rem;
+}
+.promo-header-container {
+  padding: 1rem;
+}
+.promo-header-item, .promo-header-span {
+  text-transform: uppercase;
+}
+.promo-header-item {
+  font-size: 3rem;
+}
+.promo-header-span {
+  font-size: 1.5rem;
+}
+.promo-span {
+  display: block;
+  font-size: 0.8rem;
+  margin: 1rem 0 3rem;
+}
+.promo-price-discount {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #f5203e;
+  border: 1px solid gray;
+  width: 190px;
+  height: 70px;
+}
+.promo-price-previous {
+  position: absolute;
+  top: -0.6rem;
+  left: 2.5rem;
+  font-size: 1rem;
+  color: darkgrey;
+}
+.promo-button {
+  position: absolute;
+  top: 190px;
+  right: 3rem;
+  height: 60px;
+  width: 230px;
+  background: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
 /*# sourceMappingURL=main.css.map */
