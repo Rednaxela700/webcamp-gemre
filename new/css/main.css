@@ -491,6 +491,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 0 0 4rem;
   width: 180px;
 }
 .info-img > img {
@@ -501,8 +502,8 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding: 0 4rem;
-  font-size: 0.8rem;
+  padding: 0 3rem;
+  font-size: 0.9rem;
 }
 .info-text > p {
   padding: 1rem;
