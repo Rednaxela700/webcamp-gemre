@@ -558,5 +558,13 @@ body {
   text-transform: uppercase;
   font-weight: bold;
 }
+.footer-bg {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  background-color: #212223;
+  align-items: center;
+  padding: 0 4rem;
+}
 
 /*# sourceMappingURL=main.css.map */
