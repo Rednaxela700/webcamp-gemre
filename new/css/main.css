@@ -438,4 +438,9 @@ body {
   font-size: 1.1rem;
 }
 
+.premium {
+  height: 450px;
+  background-image: url("../img/strefa_premium.png");
+}
+
 /*# sourceMappingURL=main.css.map */
