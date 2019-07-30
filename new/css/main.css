@@ -439,8 +439,42 @@ body {
 }
 
 .premium {
+  display: flex;
   height: 450px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
   background-image: url("../img/strefa_premium.png");
+  background-position-x: -4.8rem;
+  margin: 4rem 0;
+}
+.premium-header {
+  margin: 7rem 0 0 0;
+  font-size: 3rem;
+  color: #f7da95;
+  text-align: center;
+  text-transform: uppercase;
+}
+.premium-span {
+  display: block;
+  color: lightgrey;
+  text-align: center;
+}
+.premium-span-container {
+  padding: 2rem;
+}
+.premium-btn {
+  padding: 1rem;
+  height: 60px;
+  width: 230px;
+  background-color: #f7da95;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.premium-btn:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=main.css.map */
